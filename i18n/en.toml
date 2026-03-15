@@ -1,0 +1,113 @@
+[home]
+other = "Home"
+
+[about]
+other = "About"
+
+[projects]
+other = "Projects"
+
+[skills]
+other = "Skills"
+
+[contact]
+other = "Contact"
+
+[greeting]
+other = "Hello, I'm"
+
+[title]
+other = "Creative Developer"
+
+[tagline]
+other = "Building digital experiences with creativity and code"
+
+[viewProjects]
+other = "View Projects"
+
+[getInTouch]
+other = "Get in Touch"
+
+[aboutMe]
+other = "About Me"
+
+[aboutText1]
+other = "I'm a creative developer passionate about crafting unique digital experiences. I blend design thinking with technical expertise to build products that are both beautiful and functional."
+
+[aboutText2]
+other = "When I'm not coding, you'll find me exploring new technologies, contributing to open source, or seeking inspiration in art and nature."
+
+[yearsExperience]
+other = "Years Experience"
+
+[projectsCount]
+other = "Projects"
+
+[curiosity]
+other = "Curiosity"
+
+[featuredProjects]
+other = "Featured Projects"
+
+[skillsTools]
+other = "Skills & Tools"
+
+[frontend]
+other = "Frontend"
+
+[backend]
+other = "Backend"
+
+[tools]
+other = "Tools"
+
+[getInTouchTitle]
+other = "Get In Touch"
+
+[getInTouchText]
+other = "I'm currently open to new opportunities and collaborations. Whether you have a project in mind or just want to chat, feel free to reach out!"
+
+[email]
+other = "Email"
+
+[github]
+other = "GitHub"
+
+[copyright]
+other = "All rights reserved"
+
+[craftedWith]
+other = "Crafted with creativity & code"
+
+[scroll]
+other = "Scroll"
+
+[viewProject]
+other = "View Project"
+
+[lightMode]
+other = "Light Mode"
+
+[darkMode]
+other = "Dark Mode"
+
+[switchLanguage]
+other = "Switch Language"
+
+[developer]
+other = "developer"
+
+[creative]
+other = "creative"
+
+[curious]
+other = "curious"
+
+[passion]
+other = "passion"
+
+[buildingThings]
+other = "building things"
+
+[magic]
+other = "magic"

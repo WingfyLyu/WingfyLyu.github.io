@@ -1,5 +1,5 @@
 (function() {
-    'const themeKey = "theme"';
+    const themeKey = "theme";
     const stored = localStorage.getItem(themeKey);
     if (stored) {
         document.documentElement.setAttribute("data-theme", stored);
@@ -13,6 +13,20 @@ if (themeToggle) {
         const next = current === "dark" ? "light" : "dark";
         document.documentElement.setAttribute("data-theme", next);
         localStorage.setItem("theme", next);
+    });
+}
+
+const langToggle = document.querySelector(".lang-toggle");
+if (langToggle) {
+    langToggle.addEventListener("click", function() {
+        const currentLang = document.documentElement.getAttribute("lang") || "zh";
+        const currentPath = window.location.pathname;
+        
+        if (currentLang.startsWith("zh")) {
+            window.location.href = "/en" + currentPath;
+        } else {
+            window.location.href = currentPath.replace(/^\/en/, "") || "/";
+        }
     });
 }
 
@@ -30,7 +44,10 @@ if (navToggle && navMenu) {
     });
 }
 
-const titles = ["Creative Developer", "Full Stack Engineer", "Problem Solver", "Open Source Enthusiast"];
+const currentLang = document.documentElement.getAttribute("lang") || "zh";
+const titles = currentLang.startsWith("zh") 
+    ? ["创意开发者", "全栈工程师", "问题解决者", "开源爱好者"]
+    : ["Creative Developer", "Full Stack Engineer", "Problem Solver", "Open Source Enthusiast"];
 const typedElement = document.getElementById("typed-text");
 if (typedElement) {
     let titleIndex = 0;

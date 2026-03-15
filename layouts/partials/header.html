@@ -1,6 +1,6 @@
 <header class="header">
     <nav class="nav container">
-        <a href="/" class="logo">
+        <a href="{{ "/" | relURL }}" class="logo">
             <span class="logo-bracket">&lt;</span>
             <span class="logo-text">{{ .Site.Params.author }}</span>
             <span class="logo-bracket">/&gt;</span>
@@ -11,7 +11,10 @@
             {{ end }}
         </div>
         <div class="nav-actions">
-            <button class="theme-toggle" aria-label="Toggle theme">
+            <button class="lang-toggle" aria-label="{{ i18n "switchLanguage" }}">
+                <span class="lang-text">{{ if eq .Site.Language.Lang "zh" }}EN{{ else }}中{{ end }}</span>
+            </button>
+            <button class="theme-toggle" aria-label="{{ i18n "switchLanguage" }}">
                 <span class="theme-icon light">☀️</span>
                 <span class="theme-icon dark">🌙</span>
             </button>

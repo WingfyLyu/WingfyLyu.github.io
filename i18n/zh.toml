@@ -1,0 +1,113 @@
+[home]
+other = "首页"
+
+[about]
+other = "关于我"
+
+[projects]
+other = "项目"
+
+[skills]
+other = "技能"
+
+[contact]
+other = "联系"
+
+[greeting]
+other = "你好，我是"
+
+[title]
+other = "创意开发者"
+
+[tagline]
+other = "用创意和代码构建数字体验"
+
+[viewProjects]
+other = "查看项目"
+
+[getInTouch]
+other = "联系我"
+
+[aboutMe]
+other = "关于我"
+
+[aboutText1]
+other = "我是一名充满创意的开发者，热衷于打造独特的数字体验。我将设计思维与技术专长相结合，构建既美观又实用的产品。"
+
+[aboutText2]
+other = "在不写代码的时候，你会发现我在探索新技术、参与开源项目，或从艺术和自然中寻找灵感。"
+
+[yearsExperience]
+other = "年经验"
+
+[projectsCount]
+other = "个项目"
+
+[curiosity]
+other = "好奇心"
+
+[featuredProjects]
+other = "精选项目"
+
+[skillsTools]
+other = "技能与工具"
+
+[frontend]
+other = "前端"
+
+[backend]
+other = "后端"
+
+[tools]
+other = "工具"
+
+[getInTouchTitle]
+other = "联系我"
+
+[getInTouchText]
+other = "我目前对新机会和合作持开放态度。无论你有什么项目想法，还是只想聊聊，都欢迎联系我！"
+
+[email]
+other = "邮箱"
+
+[github]
+other = "GitHub"
+
+[copyright]
+other = "保留所有权利"
+
+[craftedWith]
+other = "用创意与代码打造"
+
+[scroll]
+other = "滚动"
+
+[viewProject]
+other = "查看项目"
+
+[lightMode]
+other = "日间模式"
+
+[darkMode]
+other = "夜间模式"
+
+[switchLanguage]
+other = "切换语言"
+
+[developer]
+other = "开发者"
+
+[creative]
+other = "创意"
+
+[curious]
+other = "好奇"
+
+[passion]
+other = "热情"
+
+[buildingThings]
+other = "构建事物"
+
+[magic]
+other = "魔法"

@@ -1,6 +1,65 @@
 baseURL = 'https://wingfylyu.github.io/'
-languageCode = 'zh-cn'
 title = 'WingfyLyu - Portfolio'
+
+# 默认语言
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = false
+
+# 语言配置
+[languages]
+  [languages.zh]
+    languageCode = 'zh-cn'
+    languageName = '中文'
+    weight = 1
+    title = 'WingfyLyu - 个人主页'
+    [languages.zh.menu]
+      [[languages.zh.menu.main]]
+        identifier = 'about'
+        name = '关于我'
+        url = '/#about'
+        weight = 1
+      [[languages.zh.menu.main]]
+        identifier = 'projects'
+        name = '项目'
+        url = '/#projects'
+        weight = 2
+      [[languages.zh.menu.main]]
+        identifier = 'skills'
+        name = '技能'
+        url = '/#skills'
+        weight = 3
+      [[languages.zh.menu.main]]
+        identifier = 'contact'
+        name = '联系'
+        url = '/#contact'
+        weight = 4
+  
+  [languages.en]
+    languageCode = 'en-us'
+    languageName = 'English'
+    weight = 2
+    title = 'WingfyLyu - Portfolio'
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = 'about'
+        name = 'About'
+        url = '/#about'
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = 'projects'
+        name = 'Projects'
+        url = '/#projects'
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = 'skills'
+        name = 'Skills'
+        url = '/#skills'
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = 'contact'
+        name = 'Contact'
+        url = '/#contact'
+        weight = 4
 
 # 构建配置
 buildDrafts = false
@@ -44,29 +103,6 @@ paginatePath = 'page'
   # 主题设置
   defaultTheme = 'dark'
   themeSwitcher = true
-
-# 菜单
-[menu]
-  [[menu.main]]
-    identifier = 'about'
-    name = 'About'
-    url = '/#about'
-    weight = 1
-  [[menu.main]]
-    identifier = 'projects'
-    name = 'Projects'
-    url = '/#projects'
-    weight = 2
-  [[menu.main]]
-    identifier = 'skills'
-    name = 'Skills'
-    url = '/#skills'
-    weight = 3
-  [[menu.main]]
-    identifier = 'contact'
-    name = 'Contact'
-    url = '/#contact'
-    weight = 4
 
 # 输出格式
 [outputs]

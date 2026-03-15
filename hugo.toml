@@ -1,7 +1,6 @@
 baseURL = 'https://wingfylyu.github.io/'
 languageCode = 'zh-cn'
 title = 'WingfyLyu - Portfolio'
-theme = ''  # 使用本地主题
 
 # 构建配置
 buildDrafts = false

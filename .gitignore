@@ -1,0 +1,8 @@
+/public/
+/resources/_gen/
+/.hugo_build.lock
+/node_modules/
+/npm-debug.log
+/.env
+.DS_Store
+Thumbs.db

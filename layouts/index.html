@@ -1,0 +1,210 @@
+{{ define "main" }}
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <canvas id="particle-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <span class="greeting">Hello, I'm</span>
+            <h1 class="name">{{ .Site.Params.author }}</h1>
+            <div class="title-wrapper">
+                <span class="title-prefix">&lt;</span>
+                <span class="title" id="typed-text"></span>
+                <span class="title-suffix">/&gt;</span>
+            </div>
+            <p class="tagline">Building digital experiences with creativity and code</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"{{ .Site.Params.author }}"</span>,
+  <span class="property">skills</span>: [<span class="string">"creative"</span>, <span class="string">"curious"</span>],
+  <span class="property">passion</span>: <span class="string">"building things"</span>,
+  <span class="method">create</span>: () => <span class="string">"magic"</span>
+};</code></pre>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-number">01.</span>
+            About Me
+        </h2>
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="image-frame">
+                    <div class="frame-corner tl"></div>
+                    <div class="frame-corner tr"></div>
+                    <div class="frame-corner bl"></div>
+                    <div class="frame-corner br"></div>
+                    <div class="image-placeholder">
+                        <span>Your Photo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <p>I'm a creative developer passionate about crafting unique digital experiences. I blend design thinking with technical expertise to build products that are both beautiful and functional.</p>
+                <p>When I'm not coding, you'll find me exploring new technologies, contributing to open source, or seeking inspiration in art and nature.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Curiosity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section projects" id="projects">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-number">02.</span>
+            Featured Projects
+        </h2>
+        <div class="projects-grid">
+            {{ range first 6 (where .Site.RegularPages "Section" "projects") }}
+            <article class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <a href="{{ .Params.link }}" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">{{ .Title }}</h3>
+                    <p class="project-description">{{ .Description }}</p>
+                    <div class="project-tags">
+                        {{ range .Params.tags }}
+                        <span class="tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="section skills" id="skills">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-number">03.</span>
+            Skills & Tools
+        </h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-icon">⚛</span>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">💚</span>
+                        <span>Vue.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🎨</span>
+                        <span>CSS/Sass</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">📱</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-icon">🟢</span>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🐍</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🗄</span>
+                        <span>Databases</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🔌</span>
+                        <span>APIs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-icon">📦</span>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🐳</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">☁️</span>
+                        <span>Cloud Services</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">🔧</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-number">04.</span>
+            Get In Touch
+        </h2>
+        <div class="contact-content">
+            <p class="contact-text">I'm currently open to new opportunities and collaborations. Whether you have a project in mind or just want to chat, feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:{{ .Site.Params.email }}" class="contact-link">
+                    <span class="link-icon">✉️</span>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/{{ .Site.Params.github }}" class="contact-link" target="_blank" rel="noopener">
+                    <span class="link-icon">💻</span>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,76 @@
+baseURL = 'https://wingfylyu.github.io/'
+languageCode = 'zh-cn'
+title = 'WingfyLyu - Portfolio'
+theme = ''  # 使用本地主题
+
+# 构建配置
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# 分页
+paginate = 6
+paginatePath = 'page'
+
+# 代码高亮
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'monokai'
+    tabWidth = 4
+
+# 站点参数
+[params]
+  author = 'WingfyLyu'
+  description = 'Creative Developer Portfolio'
+  email = ''
+  github = 'WingfyLyu'
+  
+  # 社交链接
+  [[params.social]]
+    name = 'GitHub'
+    url = 'https://github.com/WingfyLyu'
+    icon = 'github'
+  
+  # 主题设置
+  defaultTheme = 'dark'
+  themeSwitcher = true
+
+# 菜单
+[menu]
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/#about'
+    weight = 1
+  [[menu.main]]
+    identifier = 'projects'
+    name = 'Projects'
+    url = '/#projects'
+    weight = 2
+  [[menu.main]]
+    identifier = 'skills'
+    name = 'Skills'
+    url = '/#skills'
+    weight = 3
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = '/#contact'
+    weight = 4
+
+# 输出格式
+[outputs]
+  home = ['HTML']
+  section = ['HTML']
+  page = ['HTML']

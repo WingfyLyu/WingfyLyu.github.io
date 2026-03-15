@@ -6,6 +6,9 @@
     <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    
     {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     
